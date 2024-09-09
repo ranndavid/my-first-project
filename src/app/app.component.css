@@ -1,0 +1,42 @@
+
+.header-sidenav-content {
+    
+    background-color: #2f3830;
+    /* Green background */
+    color: white;
+    /* White text color */
+    padding: 15px;
+    /* Padding for spacing */
+    display: flex;
+    /* Flexbox for alignment */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: space-between;
+    /* Space between button and content */
+}
+.menu-sidenav{
+    width: 200px;
+
+}
+.logo{
+    display: flex;
+    position: relative;
+    height: 70px;
+    
+}
+.logo h1{
+    position: absolute;
+    font-size: 20px;
+    top: 3px;
+    left: 100px;
+    color: rgb(28, 131, 134);
+    font-family:Fantasy;
+}
+.logo img{
+    top: 2px;
+}
+
+.menu-sidenav {
+    border-right: 0.5px solid red;
+    border-radius: 0px;
+}
