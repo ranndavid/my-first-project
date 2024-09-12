@@ -1,0 +1,28 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+       {{onTable.id | json}}
+       <div class="mb-3">
+              <label for="floorInput"
+                     class="form-label">Floor</label>
+              <input type="text"
+                     [(ngModel)]="onTable.floor"
+                     [ngModelOptions]="{standalone: true}"
+                     class="form-control"
+                     id="floorInput"
+                     aria-describedby="floorHelp">
+              <div id="floorHelp"
+                   class="form-text">Please fill this</div>
+       </div>
+       <div class="mb-3">
+              <label for="tableInput"
+                     class="form-label">Table</label>
+              <input type="text"
+                     [(ngModel)]="onTable.table"
+                     [ngModelOptions]="{standalone: true}"
+                     class="form-control"
+                     id="tableInput">
+       </div>
+
+       <button type="submit"
+               class="btn btn-primary">Submit</button>
+</form>

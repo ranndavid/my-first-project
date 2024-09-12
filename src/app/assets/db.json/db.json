@@ -1,0 +1,111 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": "2",
+      "floor": "3",
+      "table": "normal"
+    },
+    {
+      "id": "2",
+      "floor": "3",
+      "table": "normal"
+    },
+    {
+      "id": "2",
+      "floor": "3",
+      "table": "normal"
+    }
+  ],
+  "tables": [
+    {
+      "id": "2",
+      "floor": "F01",
+      "table": "T02"
+    },
+    {
+      "id": "e139",
+      "floor": "1212",
+      "table": "1212"
+    },
+    {
+      "id": "86f5",
+      "floor": "F012345678",
+      "table": "T04444"
+    },
+    {
+      "id": "3c1a",
+      "floor": "F01",
+      "table": "T02"
+    },
+    {
+      "id": "300c",
+      "floor": "F01",
+      "table": "T02"
+    },
+    {
+      "id": "de24",
+      "floor": "123",
+      "table": "4564"
+    },
+    {
+      "id": "3c1a",
+      "floor": "F01",
+      "table": "T02"
+    },
+    {
+      "id": "3c1a",
+      "floor": "F01",
+      "table": "T02"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "431a",
+      "name": "Pin monyvichea",
+      "value": "to5"
+    },
+    {
+      "id": "431a",
+      "name": "Pin monyvichea",
+      "value": "to4"
+    },
+    {
+      "id": "4c3e",
+      "name": "gg",
+      "value": "123"
+    },
+    {
+      "id": "56e3",
+      "name": "www",
+      "value": "234"
+    }
+  ],
+
+  "menu":[
+    {
+      "id":"1",
+      "name": "Hambuger",
+      "category": "fast-food",
+      "stock-out":"0.2",
+      "price": "5$",
+      "ingredient ":"beef"
+    }
+  ]
+}

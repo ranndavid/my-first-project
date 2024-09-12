@@ -1,0 +1,35 @@
+<button type="button"
+        class="btn btn-info">ADD
+</button>
+
+<app-add-table (onAddTable)="onAddTable($event)"
+               [onTable]="table"></app-add-table>
+<table class="table table-primary">
+    <thead>
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Floor</th>
+            <th scope="col">Table Name</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr *ngFor="let t of tables">
+            <th>{{ t.id }}</th>
+            <td>{{ t.floor }}</td>
+            <td>{{ t.table }}</td>
+            <td>
+                <button (click)=" onDelete(t)"
+                        type="button"
+                        class="btn btn-outline-danger">
+                    <i class="fa fa-trash"></i>
+                </button>
+                <button (click)="onEditTable(t)"
+                        type="button"
+                        class="btn btn-outline-info">
+                    <i class="fas fa-edit"></i>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

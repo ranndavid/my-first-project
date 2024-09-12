@@ -1,0 +1,27 @@
+.action-button {
+    width: 50px;
+    /* Set a fixed width */
+    height: 50px;
+    /* Set a fixed height */
+    display: inline-flex;
+    /* Align icon properly */
+    justify-content: center;
+    /* Center the icon */
+    align-items: center;
+    /* Center the icon */
+    margin-right: 10px;
+    /* Add space between the buttons */
+}
+
+.btn {
+    width: 50px;
+    /* Match the width */
+    height: 50px;
+    /* Match the height */
+    display: inline-flex;
+    /* Align icon properly */
+    justify-content: center;
+    /* Center the icon */
+    align-items: center;
+    /* Center the icon */
+}

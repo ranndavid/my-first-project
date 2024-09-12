@@ -1,33 +1,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
   integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  
+
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="menu-sidenav" mode="side">
-    <div class="example-header">
-     
-    </div>
-
-    @if (showFiller) {
-    <!-- <img width="10px" height="100px"
-      src="https://marketplace.canva.com/EAFwIrrpQxo/1/0/1600w/canva-brown-flat-illustrative-chef-restaurant-logo-pRMi3FdE_Yc.jpg"
-      alt="">
-    <p style="color: rgb(72, 240, 21);">WELCOME TO OUR MENU</p> -->
-    }
-
     <div class="logo">
-      <img width="70px" height="70px"
-        src="https://as2.ftcdn.net/v2/jpg/04/89/58/15/1000_F_489581540_ZqoIrKEEygQ3w0913myn53huHvgwN070.jpg" alt="">
+      <img width="70px" height="55px"
+        src="https://img.freepik.com/premium-photo/background-image-mockup-design_853558-32662.jpg" alt="">
       <h1>WELCOME</h1>
     </div>
 
     <app-menu></app-menu>
+  
   </mat-drawer>
 
   <div class="header-sidenav-content">
     <button type="button" mat-button (click)="drawer.toggle()">
       <i style="color: aliceblue;" class="fa-solid fa-list"></i>
     </button>
+     <button type="button" mat-button (click)="drawer.toggle()">
+      <i style="color: aliceblue;" class="	fas fa-user-lock"></i>
+    </button>
+  </div>
 
+  <div class="content-area">
     <router-outlet></router-outlet>
   </div>
 </mat-drawer-container>

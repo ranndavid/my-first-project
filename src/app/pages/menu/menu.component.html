@@ -1,5 +1,27 @@
-<mat-list  role="list">
-    <mat-list-item (click)="showInfo('home')"  [activated]="true" role="listitem">Home</mat-list-item>
-    <mat-list-item (click)="showInfo('about')" [activated]="false" role="listitem">About</mat-list-item>
-    <mat-list-item (click)="showInfo('drink')" [activated]="false" role="listitem">Drink</mat-list-item>
+<mat-list class="list-menu" role="list">
+  <div class="menu">
+    <mat-list-item routerLink="/home" routerLinkActive="active">
+        <a (click)="showInfo('home')" ><i class="fa-solid fa-house"></i> Home</a>
+    </mat-list-item>
+    <mat-list-item   routerLink="/dashboard" routerLinkActive="active">
+      <a  (click)="showInfo('dashboard')">
+        <i class="	fab fa-steam-square"></i> Dashboard
+      </a>
+    </mat-list-item>
+      <mat-list-item routerLink="/dine-in" routerLinkActive="active">
+        <a (click)="showInfo('dine-in')">
+          <i class="fas fa-hamburger"></i> Dine In
+        </a>
+      </mat-list-item>
+  <mat-list-item routerLink="/stock" routerLinkActive="active">
+    <a (click)="showInfo('stock')">
+      <i class="	fas fa-lock-open"></i> Stock
+    </a>
+  </mat-list-item>
+  </div>
+  <mat-list-item  routerLink="/setting" routerLinkActive="active">
+     
+        <a (click)="showInfo('setting')"><i class="fa-solid fa-gear"></i> Setting</a>
+
+  </mat-list-item>
 </mat-list>

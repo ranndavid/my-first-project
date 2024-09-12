@@ -1,0 +1,9 @@
+.btn {
+    margin-right: 10px;
+    /* Space between buttons */
+}
+
+.btn:last-child {
+    margin-right: 0;
+    /* Remove margin from the last button */
+}

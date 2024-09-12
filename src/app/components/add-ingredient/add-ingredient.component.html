@@ -1,0 +1,37 @@
+<form #f="ngForm"
+      (ngSubmit)="onSubmit(f)">
+    <!-- {{onEditIngredient | json}} -->
+    <div class="mb-3">
+        <label for="exampleInputName"
+               class="form-label">Ingredient Name</label>
+        <input type="text"
+               class="form-control"
+               [(ngModel)]="onEditIngredient.name"
+               name="name"
+               [ngModelOptions]="{standalone: true}"
+               id="exampleInputName"
+               aria-describedby="emailHelp">
+        <div id="emailHelp"
+             class="form-text">Please fill the box</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputvalue "
+               class="form-label">Value</label>
+
+        <input type="text"
+               [(ngModel)]="onEditIngredient.value"
+               name="value"
+               class="form-control"
+               id="exampleInputValue">
+    </div>
+
+    <button type="submit"
+            class="btn btn-primary">Submit</button>
+
+
+    <button class="btn btn-danger"
+            (click)="onReset()"
+            type="button">
+        Reset
+    </button>
+</form>

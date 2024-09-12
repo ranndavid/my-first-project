@@ -1,0 +1,33 @@
+<h3 class="settings-header"><i class="fa-solid fa-gears"></i> Setting</h3>
+<mat-list role="list">
+    <mat-list-item role="listitem" routerLinkActive="active">
+        <button mat-button (click)="showInfo('setting/user')" class="custom-button">
+            <i class="fa-regular fa-user"></i> User
+        </button>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+        <button mat-button (click)="showInfo('setting/category')" class="custom-button">
+            <i class="fa-solid fa-sliders"></i> Category
+        </button>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+        <button mat-button (click)="showInfo('setting/role')" class="custom-button">
+            <i class="fa-solid fa-users"></i> Role
+        </button>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+        <button mat-button (click)="showInfo('setting/ingredient')" class="custom-button">
+            <i class='fas fa-birthday-cake'></i> Ingredient
+        </button>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+        <button mat-button (click)="showInfo('setting/menu1')" class="custom-button">
+            <i class="material-icons">restaurant_menu</i> Menu
+        </button>
+    </mat-list-item>
+    <mat-list-item role="listitem">
+        <button mat-button (click)="showInfo('setting/table')" class="custom-button">
+            <i class="fa fa-table"></i> Table
+        </button>
+    </mat-list-item>
+</mat-list>

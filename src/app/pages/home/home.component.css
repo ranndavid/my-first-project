@@ -1,0 +1,11 @@
+.example-card {
+    max-width: 400px;
+}
+.home {
+    display: flex;
+}
+
+.example-header-image {
+    background-image: url('https://cdn.vectorstock.com/i/500p/04/30/application-pc-and-smartphone-with-business-vector-29570430.jpg');
+    background-size: cover;
+}

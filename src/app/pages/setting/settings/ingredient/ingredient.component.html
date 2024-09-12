@@ -1,0 +1,35 @@
+<button type="button"
+        class="btn btn-info">ADD
+</button>
+<app-add-ingredient (onAddIngredient)="addIngredient($event)"
+                    [onEditIngredient]="ingredient"></app-add-ingredient>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Ingredient Name</th>
+            <th scope="col">Value</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr *ngFor="let i of ingredients">
+            <th>{{ i.id }}</th>
+            <td>{{ i.name }}</td>
+            <td>{{ i.value }}</td>
+            <td>
+                <button mat-fab
+                        (click)="doDeleteIngredient(i)"
+                        class="action-button"
+                        aria-label="Delete">
+                    <mat-icon>delete</mat-icon>
+                </button>
+                <button (click)="onEdit(i)"
+                        type="button"
+                        class="btn btn-outline-success action-button">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
